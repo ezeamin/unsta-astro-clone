@@ -1,0 +1,61 @@
+---
+import { Image } from '@astrojs/image/components';
+
+import logo from '../../assets/img/logo.png';
+---
+
+<section id='navbar' class='flex justify-between items-center'>
+  <div class=''>
+    <Image src={logo} alt='Logo' width={118} height={42} />
+  </div>
+  <div class='flex items-center gap-2 ml-2 mb-1'>
+    <div>
+      <a>Universidad</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Oferta Académica</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Facultades</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Vida UNSTA</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Investigadores</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Extensión</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div>
+      <a>Bolsa de Trabajo</a>
+      <i class='fa-solid fa-chevron-down'></i>
+    </div>
+    <div class="mr-2">
+      <a>Agenda</a>
+    </div>
+    <i class='fa-solid fa-search'></i>
+  </div>
+</section>
+
+<style>
+  #navbar {
+    height: 65px;
+    padding: 14px 0;
+  }
+
+  #navbar a {
+    font-weight: 600;
+  }
+
+  #navbar a,
+  i {
+    font-size: 0.7rem;
+  }
+</style>
