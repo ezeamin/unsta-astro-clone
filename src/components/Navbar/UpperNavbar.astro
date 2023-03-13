@@ -1,0 +1,37 @@
+---
+import SocialLinkButton from './SocialLinkButton.astro';
+---
+
+<section id='upperNavbar' class='flex justify-between'>
+  <div class='flex items-center gap-2 ml-2'>
+    <SocialLinkButton icon='fa-brands fa-facebook-f' />
+    <SocialLinkButton icon='fa-brands fa-twitter' />
+    <SocialLinkButton icon='fa-brands fa-instagram' />
+    <SocialLinkButton icon='fa-brands fa-youtube' />
+    <SocialLinkButton icon='fa-brands fa-linkedin-in' />
+    <SocialLinkButton icon='fa-brands fa-whatsapp' />
+    <SocialLinkButton icon='fa-brands fa-android' />
+    <SocialLinkButton icon='fa-brands fa-apple' />
+  </div>
+  <div class='flex items-end gap-2 ml-2 mb-1'>
+    <a>Comunidad UNSTA</a>
+    <a>Autogestión Alumno</a>
+    <a>Autogestión Docente</a>
+    <a>Autogestión Empleado</a>
+    <a>Plataforma SEO</a>
+    <a>Biblioteca</a>
+    <a>Cupón de Pago</a>
+  </div>
+</section>
+
+<style>
+  #upperNavbar {
+    background-color: var(--primary-darker);
+    height: 25px;
+  }
+
+  a{
+    font-size: 0.623rem;
+    font-weight: 500;
+  }
+</style>

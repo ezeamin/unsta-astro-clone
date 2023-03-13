@@ -1,16 +1,34 @@
 ---
+import FacultySection from '../components/LinksSection/FacultySection.astro';
+import WhiteLink from '../components/LinksSection/WhiteLink.astro';
+import MainImage from '../components/MainImage/MainImage.astro';
+import Navbar from '../components/Navbar/Navbar.astro';
+import UpperNavbar from '../components/Navbar/UpperNavbar.astro';
 ---
 
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='icon' type='image/png' href='/img/favicon.png' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
+    <script
+      src='https://kit.fontawesome.com/10942c11e8.js'
+      crossorigin='anonymous'
+    ></script>
+    <title>UNSTA - Universidad</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <header>
+      <UpperNavbar />
+      <Navbar />
+    </header>
+    <main>
+      <MainImage />
+      <WhiteLink text='Ingresantes 2023 - Programa de Ingreso Universitario' />
+      <FacultySection />
+      <WhiteLink text='Vacantes para docentes - Click aqui' />
+    </main>
   </body>
 </html>
 
@@ -19,6 +37,7 @@
 
   :root {
     --primary: #194da0;
+    --primary-darker: #13489c;
     --secondary: #ea5b23;
   }
 
@@ -30,5 +49,7 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary);
+    color: #ffffff;
   }
 </style>
